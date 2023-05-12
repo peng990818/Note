@@ -7,4 +7,6 @@
   *  [闭包](go/go闭包.md)
   * [embed](go/go embed.md)
   * [编译指令](go/编译指令.md)
+  * [工具链](go/工具链.md)
+  * [相关问题](go/相关问题.md)
 
