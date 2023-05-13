@@ -6,6 +6,7 @@ git commit -m "update"
 git push
 
 # 创建部署分支
+git branch -d gh-pages
 git checkout --orphan gh-pages
 
 # 删除不必要的文件
@@ -26,4 +27,4 @@ git commit -m "Publish book"
 git push -u origin gh-pages -f
 
 # 切回main分支
-git checkout origin/main
+git checkout main
