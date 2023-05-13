@@ -26,4 +26,4 @@ git commit -m "Publish book"
 git push -u origin gh-pages -f
 
 # 切回main分支
-git checkout main
+git checkout origin/main
