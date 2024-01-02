@@ -9,6 +9,7 @@
   * [工具链](go/工具链.md)
   * [反射](go/反射.md)
   * [unsafe](go/unsafe.md)
+  * [接口](go/interface.md)
   * [相关问题](go/相关问题.md)
 * [Node](node/README.md)
   * [相关问题](node/相关问题.md)
