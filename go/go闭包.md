@@ -1,5 +1,7 @@
 # 闭包
 
+<span style='color:red'>闭包捕获的是当前变量的引用。</span>
+
 ```
 package main
 
