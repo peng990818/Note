@@ -13,6 +13,8 @@
   * [环境变量](go/环境变量.md)
   * [plan9汇编](go/plan9.md)
   * [相关问题](go/相关问题.md)
+  * [编译流程](go/编译流程.md)
+  * [运行时](go/runtime.md)
 * [Node](node/README.md)
   * [相关问题](node/相关问题.md)
 * [Linux](Linux/README.md)
