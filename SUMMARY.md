@@ -15,6 +15,7 @@
   * [相关问题](go/相关问题.md)
   * [编译流程](go/编译流程.md)
   * [运行时](go/runtime.md)
+  * [关键字](go/关键字.md)
 * [Node](node/README.md)
   * [相关问题](node/相关问题.md)
 * [Linux](Linux/README.md)
