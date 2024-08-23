@@ -17,6 +17,7 @@
   * [运行时](go/runtime.md)
   * [内置关键字](go/内置关键字.md)
   * [类型](go/类型.md)
+  * [内部包](go/内部包.md)
 * [Node](node/README.md)
   * [相关问题](node/相关问题.md)
 * [Linux](Linux/README.md)
