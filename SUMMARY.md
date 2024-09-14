@@ -18,6 +18,8 @@
   * [内置关键字](go/内置关键字.md)
   * [类型](go/类型.md)
   * [内部包](go/内部包.md)
+  * [内存一致模型](go/内存一致模型.md)
+  * [并发调度](go/并发调度.md)
 * [Node](node/README.md)
   * [相关问题](node/相关问题.md)
 * [Linux](Linux/README.md)
