@@ -28,6 +28,7 @@
   * [oauth2](Project/oauth2.md)
   * [网络协议](Project/web.md)
   * [后端](Project/后端.md)
+  * [敏感词处理](Project/敏感词处理.md)
 * [算法](算法/README.md)
   * [数据结构](算法/数据结构.md)
   * [算法](算法/算法.md)
