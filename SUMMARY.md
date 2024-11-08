@@ -34,3 +34,8 @@
   * [算法](算法/算法.md)
 * [中间件](中间件/README.md)
   * [mysql](中间件/mysql.md)
+* [常见问题](常见问题/README.md)
+  * [GO语言](常见问题/Go语言.md)
+  * [mysql](常见问题/mysql.md)
+  * [redis](常见问题/redis.md)
+  * [Linux](常见问题/Linux.md)
