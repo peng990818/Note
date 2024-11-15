@@ -1,0 +1,1570 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>运行时 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="内置关键字.html" />
+    
+    
+    <link rel="prev" href="编译流程.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Go
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="go 内存逃逸.html">
+            
+                <a href="go 内存逃逸.html">
+            
+                    
+                    内存逃逸
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="go闭包.html">
+            
+                <a href="go闭包.html">
+            
+                    
+                    闭包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="go embed.html">
+            
+                <a href="go embed.html">
+            
+                    
+                    embed
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="编译指令.html">
+            
+                <a href="编译指令.html">
+            
+                    
+                    编译指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="工具链.html">
+            
+                <a href="工具链.html">
+            
+                    
+                    工具链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="反射.html">
+            
+                <a href="反射.html">
+            
+                    
+                    反射
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="unsafe.html">
+            
+                <a href="unsafe.html">
+            
+                    
+                    unsafe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="interface.html">
+            
+                <a href="interface.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="环境变量.html">
+            
+                <a href="环境变量.html">
+            
+                    
+                    环境变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="plan9.html">
+            
+                <a href="plan9.html">
+            
+                    
+                    plan9汇编
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="相关问题.html">
+            
+                <a href="相关问题.html">
+            
+                    
+                    相关问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="编译流程.html">
+            
+                <a href="编译流程.html">
+            
+                    
+                    编译流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.13" data-path="runtime.html">
+            
+                <a href="runtime.html">
+            
+                    
+                    运行时
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="内置关键字.html">
+            
+                <a href="内置关键字.html">
+            
+                    
+                    内置关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.15" data-path="类型.html">
+            
+                <a href="类型.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="内部包.html">
+            
+                <a href="内部包.html">
+            
+                    
+                    内部包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="内存一致模型.html">
+            
+                <a href="内存一致模型.html">
+            
+                    
+                    内存一致模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.18" data-path="并发调度.html">
+            
+                <a href="并发调度.html">
+            
+                    
+                    并发调度
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../node/">
+            
+                <a href="../node/">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../node/相关问题.html">
+            
+                <a href="../node/相关问题.html">
+            
+                    
+                    相关问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Linux/">
+            
+                <a href="../Linux/">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Linux/基本概念.html">
+            
+                <a href="../Linux/基本概念.html">
+            
+                    
+                    基本概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Project/">
+            
+                <a href="../Project/">
+            
+                    
+                    Project
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../Project/oauth2.html">
+            
+                <a href="../Project/oauth2.html">
+            
+                    
+                    oauth2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../Project/web.html">
+            
+                <a href="../Project/web.html">
+            
+                    
+                    网络协议
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../Project/后端.html">
+            
+                <a href="../Project/后端.html">
+            
+                    
+                    后端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../Project/敏感词处理.html">
+            
+                <a href="../Project/敏感词处理.html">
+            
+                    
+                    敏感词处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../算法/">
+            
+                <a href="../算法/">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../算法/数据结构.html">
+            
+                <a href="../算法/数据结构.html">
+            
+                    
+                    数据结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../算法/算法.html">
+            
+                <a href="../算法/算法.html">
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../中间件/">
+            
+                <a href="../中间件/">
+            
+                    
+                    中间件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../中间件/mysql.html">
+            
+                <a href="../中间件/mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../常见问题/">
+            
+                <a href="../常见问题/">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../常见问题/Go语言.html">
+            
+                <a href="../常见问题/Go语言.html">
+            
+                    
+                    GO语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../常见问题/mysql.html">
+            
+                <a href="../常见问题/mysql.html">
+            
+                    
+                    mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../常见问题/redis.html">
+            
+                <a href="../常见问题/redis.html">
+            
+                    
+                    redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../常见问题/Linux.html">
+            
+                <a href="../常见问题/Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >运行时</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8FD0;&#x884C;&#x65F6;">&#x8FD0;&#x884C;&#x65F6;</h1>
+<h2 id="&#x4E00;&#x3001;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5F15;&#x5BFC;">&#x4E00;&#x3001;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5F15;&#x5BFC;</h2>
+<pre><code>// &#x771F;&#x6B63;&#x7684;&#x7A0B;&#x5E8F;&#x5165;&#x53E3;
+// src/runtime/rt0_linux_amd64.s 
+TEXT _rt0_amd64_linux(SB),NOSPLIT,$-8
+    JMP    _rt0_amd64(SB)
+</code></pre><p>&#x5728;&#x7A0B;&#x5E8F;&#x7F16;&#x8BD1;&#x4E3A;&#x673A;&#x5668;&#x7801;&#x4E4B;&#x540E;&#xFF0C;&#x4F9D;&#x8D56;&#x7279;&#x5B9A;CPU&#x67B6;&#x6784;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#xFF0C;&#x800C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x5DEE;&#x5F02;&#x5219;&#x662F;&#x76F4;&#x63A5;&#x53CD;&#x5E94;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x8FDB;&#x884C;&#x4E0D;&#x540C;&#x7684;&#x7CFB;&#x7EDF;&#x7EA7;&#x64CD;&#x4F5C;&#x4E0A;&#xFF0C;&#x6BD4;&#x5982;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x3002;</p>
+<p><span style="color:red">rt0&#x662F;runtime0&#x7684;&#x7F29;&#x5199;&#xFF0C;&#x610F;&#x4E3A;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x521B;&#x751F;&#x3002;</span></p>
+<h3 id="1&#x3001;&#x5165;&#x53E3;&#x53C2;&#x6570;">1&#x3001;&#x5165;&#x53E3;&#x53C2;&#x6570;</h3>
+<h4 id="1&#xFF09;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x548C;&#x5165;&#x53E3;&#x53C2;&#x6570;&#x7684;&#x7EA6;&#x5B9A;">1&#xFF09;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x548C;&#x5165;&#x53E3;&#x53C2;&#x6570;&#x7684;&#x7EA6;&#x5B9A;</h4>
+<p>&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x548C;&#x5165;&#x53E3;&#x53C2;&#x6570;&#x7684;&#x7EA6;&#x5B9A;&#x901A;&#x5E38;&#x662F;&#x901A;&#x8FC7;&#x7F16;&#x8BD1;&#x5668;&#x548C;&#x94FE;&#x63A5;&#x5668;&#x751F;&#x6210;&#x7684;&#x542F;&#x52A8;&#x4EE3;&#x7801;&#x6765;&#x5B9E;&#x73B0;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x548C;CPU&#x67B6;&#x6784;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x7EA6;&#x5B9A;&#xFF0C;&#x4F46;&#x662F;&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x7C7B;&#x4F3C;&#x3002;</p>
+<p>Unix-like&#x7CFB;&#x7EDF;</p>
+<p>&#x5728;&#x5927;&#x591A;&#x6570;Unix-like&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x5305;&#x62EC;Linux&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4F1A;&#x5C06;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x548C;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x4F20;&#x9012;&#x7ED9;&#x7A0B;&#x5E8F;</p>
+<p>&#x6808;&#x5E03;&#x5C40;</p>
+<ul>
+<li><p>&#x6808;&#x9876;&#xFF08;&#x9AD8;&#x5730;&#x5740;&#xFF09;&#x5B58;&#x50A8;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x548C;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x53C2;&#x6570;&#x4E2A;&#x6570;argc&#x662F;&#x4E00;&#x4E2A;&#x6574;&#x6570;&#x8868;&#x793A;&#x547D;&#x4EE4;&#x884C;&#x4F20;&#x53C2;&#x7684;&#x6570;&#x91CF;&#x3002;</p>
+</li>
+<li><p>&#x53C2;&#x6570;&#x503C;argv&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x6BCF;&#x4E2A;&#x6307;&#x9488;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+</li>
+<li><p>argv&#x6570;&#x7EC4;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x662F;NULL&#x3002;</p>
+</li>
+<li><p>&#x73AF;&#x5883;&#x53D8;&#x91CF;envp&#x662F;&#x4E00;&#x4E2A;&#x6307;&#x9488;&#x6570;&#x7EC4;&#xFF0C;&#x6BCF;&#x4E2A;&#x6307;&#x9488;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4E5F;&#x662F;NULL&#x3002;</p>
+<pre><code>+---------------------+
+| envp[0]             |
+| envp[1]             |
+| ...                 |
+| envp[n]             |
+| NULL                |
+| argv[0]             |
+| argv[1]             |
+| ...                 |
+| argv[argc-1]        |
+| NULL                |
+| argc                |
++---------------------+
+</code></pre></li>
+</ul>
+<p>Windows&#x7CFB;&#x7EDF;</p>
+<p>&#x5BF9;&#x4E8E;GUI&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;WinMain&#x662F;&#x5165;&#x53E3;&#x70B9;</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">int</span> WINAPI <span class="hljs-title">WinMain</span><span class="hljs-params">(
+    HINSTANCE hInstance,
+    HINSTANCE hPrevInstance,
+    LPSTR     lpCmdLine, <span class="hljs-comment">// &#x5305;&#x542B;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#x7684;&#x5B57;&#x7B26;&#x4E32;</span>
+    <span class="hljs-keyword">int</span>       nCmdShow
+)</span></span>;
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x63A7;&#x5236;&#x53F0;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x5165;&#x53E3;&#x70B9;&#x662F;main&#x6216;&#x8005;wmain(&#x5BBD;&#x5B57;&#x7B26;&#x7248;&#x672C;)</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> *argv[])</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">wmain</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, wchar_t *argv[])</span></span>;
+</code></pre>
+<h4 id="2&#xFF09;go&#x8FD0;&#x884C;&#x65F6;&#x5904;&#x7406;">2&#xFF09;Go&#x8FD0;&#x884C;&#x65F6;&#x5904;&#x7406;</h4>
+<p>&#x4E3A;&#x4E86;&#x652F;&#x6301;&#x4ECE;&#x7CFB;&#x7EDF;&#x7ED9;&#x8FD0;&#x884C;&#x65F6;&#x4F20;&#x9012;&#x53C2;&#x6570;&#xFF0C;Go&#x7A0B;&#x5E8F;&#x5728;&#x8FDB;&#x884C;&#x5F15;&#x5BFC;&#x65F6;&#x5C06;&#x5BF9;&#x8FD9;&#x90E8;&#x5206;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;&#x7A0B;&#x5E8F;&#x521A;&#x521A;&#x542F;&#x52A8;&#x65F6;&#xFF0C;&#x6808;&#x6307;&#x9488;SP&#x7684;&#x524D;&#x4E24;&#x4E2A;&#x503C;&#x5206;&#x522B;&#x5BF9;&#x5E94;argc&#x548C;argv&#xFF0C;&#x5206;&#x522B;&#x5B58;&#x50A8;&#x53C2;&#x6570;&#x7684;&#x6570;&#x91CF;&#x548C;&#x5177;&#x4F53;&#x7684;&#x53C2;&#x6570;&#x7684;&#x503C;&#x3002;</p>
+<pre><code>// src/runtime/asm_amd64.s
+TEXT _rt0_amd64(SB),NOSPLIT,$-8
+    MOVQ    0(SP), DI    // argc
+    LEAQ    8(SP), SI    // argv
+    JMP    runtime&#xB7;rt0_go(SB)
+
+TEXT runtime&#xB7;rt0_go(SB),NOSPLIT,$0
+    // &#x5C06;&#x53C2;&#x6570;&#x5411;&#x524D;&#x590D;&#x5236;&#x5230;&#x4E00;&#x4E2A;&#x5076;&#x6570;&#x6808;&#x4E0A;
+    MOVQ    DI, AX            // argc
+    MOVQ    SI, BX            // argv
+    SUBQ    $(4*8+7), SP    // 2args 2auto
+    ANDQ    $~15, SP
+    MOVQ    AX, 16(SP)
+    MOVQ    BX, 24(SP)
+
+    // &#x521D;&#x59CB;&#x5316; g0 &#x6267;&#x884C;&#x6808;
+    MOVQ    $runtime&#xB7;g0(SB), DI            // DI = g0
+    LEAQ    (-64*1024+104)(SP), BX
+    MOVQ    BX, g_stackguard0(DI)        // g0.stackguard0 = SP + (-64*1024+104)
+    MOVQ    BX, g_stackguard1(DI)        // g0.stackguard1 = SP + (-64*1024+104)
+    MOVQ    BX, (g_stack+stack_lo)(DI)    // g0.stack.lo    = SP + (-64*1024+104)
+    MOVQ    SP, (g_stack+stack_hi)(DI)    // g0.stack.hi    = SP
+
+    // &#x786E;&#x5B9A; CPU &#x5904;&#x7406;&#x5668;&#x7684;&#x4FE1;&#x606F;
+    MOVL    $0, AX
+    CPUID            // CPUID &#x4F1A;&#x8BBE;&#x7F6E; AX &#x7684;&#x503C;
+    MOVL    AX, SI
+</code></pre><h3 id="2&#x3001;&#x7EBF;&#x7A0B;&#x672C;&#x5730;&#x5B58;&#x50A8;tls">2&#x3001;&#x7EBF;&#x7A0B;&#x672C;&#x5730;&#x5B58;&#x50A8;TLS</h3>
+<p>&#x4E4B;&#x540E;&#x4F1A;&#x521D;&#x59CB;&#x5316;&#x5E76;&#x8FD0;&#x884C;&#x672C;&#x5730;&#x7EBF;&#x7A0B;&#x5B58;&#x50A8;&#x3002;</p>
+<pre><code>TEXT runtime&#xB7;rt0_go(SB),NOSPLIT,$0
+    (...)
+#ifdef GOOS_darwin
+    JMP ok // &#x5728; Darwin &#x7CFB;&#x7EDF;&#x4E0A;&#x8DF3;&#x8FC7; TLS &#x8BBE;&#x7F6E;
+#endif
+
+    LEAQ    runtime&#xB7;m0+m_tls(SB), DI    // DI = m0.tls
+    CALL    runtime&#xB7;settls(SB)            // &#x5C06; TLS &#x5730;&#x5740;&#x8BBE;&#x7F6E;&#x5230; DI
+
+    // &#x4F7F;&#x7528;&#x5B83;&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#xFF0C;&#x786E;&#x4FDD;&#x80FD;&#x6B63;&#x5E38;&#x8FD0;&#x884C;
+    MOVQ    TLS, BX
+    MOVQ    $0x123, g(BX)
+    MOVQ    runtime&#xB7;m0+m_tls(SB), AX
+    CMPQ    AX, $0x123            // &#x5224;&#x65AD; TLS &#x662F;&#x5426;&#x8BBE;&#x7F6E;&#x6210;&#x529F;
+    JEQ 2(PC)                     // &#x5982;&#x679C;&#x76F8;&#x7B49;&#x5219;&#x5411;&#x540E;&#x8DF3;&#x8F6C;&#x4E24;&#x6761;&#x6307;&#x4EE4;
+    CALL    runtime&#xB7;abort(SB)    // &#x4F7F;&#x7528; INT &#x6307;&#x4EE4;&#x6267;&#x884C;&#x4E2D;&#x65AD;
+ok:
+    // &#x7A0B;&#x5E8F;&#x521A;&#x521A;&#x542F;&#x52A8;&#xFF0C;&#x6B64;&#x65F6;&#x4F4D;&#x4E8E;&#x4E3B;&#x7EBF;&#x7A0B;
+    // &#x5F53;&#x524D;&#x6808;&#x4E0E;&#x8D44;&#x6E90;&#x4FDD;&#x5B58;&#x5728; g0
+    // &#x8BE5;&#x7EBF;&#x7A0B;&#x4FDD;&#x5B58;&#x5728; m0
+    MOVQ    TLS, BX
+    LEAQ    runtime&#xB7;g0(SB), CX
+    MOVQ    CX, g(BX)
+    LEAQ    runtime&#xB7;m0(SB), AX
+
+    MOVQ    CX, m_g0(AX) // m-&gt;g0 = g0
+    MOVQ    AX, g_m(CX)  // g0-&gt;m = m0
+    (...)
+</code></pre><p>&#x5176;&#x4E2D;g0&#x548C;m0&#x662F;&#x4E00;&#x7EC4;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x5728;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x4E4B;&#x521D;&#x5C31;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E86;&#xFF0C;&#x9664;&#x4E86;&#x7A0B;&#x5E8F;&#x53C2;&#x6570;&#x5916;&#xFF0C;&#x4F1A;&#x9996;&#x5148;&#x5C06;m0&#x4E0E;g0&#x901A;&#x8FC7;&#x6307;&#x9488;&#x4E92;&#x76F8;&#x5173;&#x8054;&#x3002;</p>
+<pre><code>// set tls base to DI
+TEXT runtime&#xB7;settls(SB),NOSPLIT,$32
+#ifdef GOOS_android
+    // Android stores the TLS offset in runtime&#xB7;tls_g.
+    SUBQ    runtime&#xB7;tls_g(SB), DI
+#else
+    ADDQ    $8, DI    // ELF wants to use -8(FS)
+#endif
+    MOVQ    DI, SI
+    MOVQ    $0x1002, DI    // ARCH_SET_FS
+    // SYS_arch_prctl &#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7528;&#x6765;&#x5728;x86_64&#x4E0A;&#x8BBE;&#x7F6E;&#x548C;&#x83B7;&#x53D6;&#x67B6;&#x6784;&#x76F8;&#x5173;&#x7279;&#x6027;
+    // &#x5B83;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;FS&#x548C;GS&#x5BC4;&#x5B58;&#x5668;&#x6765;&#x652F;&#x6301;&#x7EBF;&#x7A0B;&#x5C40;&#x90E8;&#x5B58;&#x50A8;
+    // FS&#x5BC4;&#x5B58;&#x5668;&#xFF1A;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x6307;&#x5411;&#x7EBF;&#x7A0B;&#x5C40;&#x90E8;&#x5B58;&#x50A8;&#x533A;&#x7684;&#x6307;&#x9488;
+    // GS&#x5BC4;&#x5B58;&#x5668;&#xFF1A;&#x5728;windows&#x4E2D;&#x548C;FS&#x5DEE;&#x4E0D;&#x591A;&#xFF0C;&#x5728;linux&#x4E2D;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x6307;&#x5411;&#x8FDB;&#x7A0B;&#x63A7;&#x5236;&#x5757;&#x6216;&#x5176;&#x4ED6;&#x5185;&#x6838;&#x6570;&#x636E;&#x7684;&#x6307;&#x9488;
+    MOVQ    $SYS_arch_prctl, AX
+    SYSCALL
+    CMPQ    AX, $0xfffffffffffff001  // &#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x6210;&#x529F;
+    JLS    2(PC)
+    MOVL    $0xf1, 0xf1  // crash &#x5D29;&#x6E83;
+    RET
+</code></pre><h3 id="3&#x3001;&#x65E9;&#x671F;&#x6821;&#x9A8C;&#x548C;&#x7CFB;&#x7EDF;&#x7EA7;&#x521D;&#x59CB;&#x5316;">3&#x3001;&#x65E9;&#x671F;&#x6821;&#x9A8C;&#x548C;&#x7CFB;&#x7EDF;&#x7EA7;&#x521D;&#x59CB;&#x5316;</h3>
+<p>&#x5728;&#x6B63;&#x5F0F;&#x521D;&#x59CB;&#x5316;&#x8FD0;&#x884C;&#x65F6;&#x7EC4;&#x4EF6;&#x4E4B;&#x524D;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E9B;&#x6821;&#x9A8C;&#x548C;&#x7CFB;&#x7EDF;&#x7EA7;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5DE5;&#x4F5C;&#xFF0C;&#x5305;&#x62EC;&#x8FD0;&#x884C;&#x65F6;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#xFF0C;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;&#x7684;&#x83B7;&#x53D6;&#x4EE5;&#x53CA;&#x5F71;&#x54CD;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x548C;&#x7A0B;&#x5E8F;&#x8C03;&#x5EA6;&#x7684;&#x76F8;&#x5173;&#x5E38;&#x91CF;&#x7684;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<p><span style="color:red">&#x6CE8;&#x610F;&#xFF1A;Linux&#x7684;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x591A;&#x6570;&#x662F;ELF&#x683C;&#x5F0F;&#xFF0C;macOS&#x7684;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x591A;&#x6570;&#x662F;mach-o&#x683C;&#x5F0F;&#xFF0C;&#x4E24;&#x8005;&#x5B58;&#x5728;&#x5F88;&#x5927;&#x533A;&#x522B;&#xFF0C;windows&#x7CFB;&#x7EDF;&#x533A;&#x522B;&#x66F4;&#x5927;&#x3002;</span></p>
+<h4 id="1&#xFF09;&#x8FD0;&#x884C;&#x65F6;&#x7C7B;&#x578B;&#x68C0;&#x67E5;">1&#xFF09;&#x8FD0;&#x884C;&#x65F6;&#x7C7B;&#x578B;&#x68C0;&#x67E5;</h4>
+<p>&#x672C;&#x8D28;&#x4E0A;&#x5C5E;&#x4E8E;&#x5BF9;&#x7F16;&#x8BD1;&#x5668;&#x7FFB;&#x8BD1;&#x5DE5;&#x4F5C;&#x7684;&#x4E00;&#x4E2A;&#x6821;&#x9A8C;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-comment">// runtime/runtime1.go</span>
+<span class="hljs-comment">// &#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x65F6;&#x7684;&#x7C7B;&#x578B;&#x68C0;&#x67E5;&#x51FD;&#x6570;</span>
+<span class="hljs-keyword">func</span> check() {
+    <span class="hljs-keyword">var</span> (
+        a     <span class="hljs-keyword">int8</span>
+        b     <span class="hljs-keyword">uint8</span>
+        c     <span class="hljs-keyword">int16</span>
+        d     <span class="hljs-keyword">uint16</span>
+        e     <span class="hljs-keyword">int32</span>
+        f     <span class="hljs-keyword">uint32</span>
+        g     <span class="hljs-keyword">int64</span>
+        h     <span class="hljs-keyword">uint64</span>
+        i, i1 <span class="hljs-keyword">float32</span>
+        j, j1 <span class="hljs-keyword">float64</span>
+        k     unsafe.Pointer
+        l     *<span class="hljs-keyword">uint16</span>
+        m     [<span class="hljs-number">4</span>]<span class="hljs-keyword">byte</span>
+    )
+    <span class="hljs-keyword">type</span> x1t <span class="hljs-keyword">struct</span> {
+        x <span class="hljs-keyword">uint8</span>
+    }
+    <span class="hljs-keyword">type</span> y1t <span class="hljs-keyword">struct</span> {
+        x1 x1t
+        y  <span class="hljs-keyword">uint8</span>
+    }
+    <span class="hljs-keyword">var</span> x1 x1t
+    <span class="hljs-keyword">var</span> y1 y1t
+
+    <span class="hljs-comment">// &#x6821;&#x9A8C;&#x5404;&#x4E2A;&#x7C7B;&#x578B;&#x7684;&#x5927;&#x5C0F;&#x662F;&#x5426;&#x7B26;&#x5408;&#x9884;&#x671F;</span>
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(a) != <span class="hljs-number">1</span> {
+        throw(<span class="hljs-string">&quot;bad a&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(b) != <span class="hljs-number">1</span> {
+        throw(<span class="hljs-string">&quot;bad b&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(c) != <span class="hljs-number">2</span> {
+        throw(<span class="hljs-string">&quot;bad c&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(d) != <span class="hljs-number">2</span> {
+        throw(<span class="hljs-string">&quot;bad d&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(e) != <span class="hljs-number">4</span> {
+        throw(<span class="hljs-string">&quot;bad e&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(f) != <span class="hljs-number">4</span> {
+        throw(<span class="hljs-string">&quot;bad f&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(g) != <span class="hljs-number">8</span> {
+        throw(<span class="hljs-string">&quot;bad g&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(h) != <span class="hljs-number">8</span> {
+        throw(<span class="hljs-string">&quot;bad h&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(i) != <span class="hljs-number">4</span> {
+        throw(<span class="hljs-string">&quot;bad i&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(j) != <span class="hljs-number">8</span> {
+        throw(<span class="hljs-string">&quot;bad j&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(k) != goarch.PtrSize {
+        throw(<span class="hljs-string">&quot;bad k&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(l) != goarch.PtrSize {
+        throw(<span class="hljs-string">&quot;bad l&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(x1) != <span class="hljs-number">1</span> {
+        throw(<span class="hljs-string">&quot;bad unsafe.Sizeof x1&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Offsetof(y1.y) != <span class="hljs-number">1</span> {
+        throw(<span class="hljs-string">&quot;bad offsetof y1.y&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> unsafe.Sizeof(y1) != <span class="hljs-number">2</span> {
+        throw(<span class="hljs-string">&quot;bad unsafe.Sizeof y1&quot;</span>)
+    }
+
+    <span class="hljs-comment">// timediv&#x51FD;&#x6570;&#x6D4B;&#x8BD5;</span>
+    <span class="hljs-comment">// &#x5047;&#x8BBE;timediv&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x79D2;&#x548C;&#x7EB3;&#x79D2;&#x90E8;&#x5206;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#x79D2;&#x90E8;&#x5206;&#xFF0C;&#x540C;&#x65F6;&#x901A;&#x8FC7;&#x6307;&#x9488;&#x53C2;&#x6570;&#x8FD4;&#x56DE;&#x7EB3;&#x79D2;&#x90E8;&#x5206;</span>
+    <span class="hljs-keyword">if</span> timediv(<span class="hljs-number">12345</span>*<span class="hljs-number">1000000000</span>+<span class="hljs-number">54321</span>, <span class="hljs-number">1000000000</span>, &amp;e) != <span class="hljs-number">12345</span> || e != <span class="hljs-number">54321</span> {
+        throw(<span class="hljs-string">&quot;bad timediv&quot;</span>)
+    }
+
+    <span class="hljs-comment">// &#x6D4B;&#x8BD5;&#x539F;&#x5B50;&#x64CD;&#x4F5C;</span>
+    <span class="hljs-keyword">var</span> z <span class="hljs-keyword">uint32</span>
+    z = <span class="hljs-number">1</span>
+    <span class="hljs-keyword">if</span> !atomic.Cas(&amp;z, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>) {
+        throw(<span class="hljs-string">&quot;cas1&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> z != <span class="hljs-number">2</span> {
+        throw(<span class="hljs-string">&quot;cas2&quot;</span>)
+    }
+
+    z = <span class="hljs-number">4</span>
+    <span class="hljs-keyword">if</span> atomic.Cas(&amp;z, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>) {
+        throw(<span class="hljs-string">&quot;cas3&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> z != <span class="hljs-number">4</span> {
+        throw(<span class="hljs-string">&quot;cas4&quot;</span>)
+    }
+
+    z = <span class="hljs-number">0xffffffff</span>
+    <span class="hljs-keyword">if</span> !atomic.Cas(&amp;z, <span class="hljs-number">0xffffffff</span>, <span class="hljs-number">0xfffffffe</span>) {
+        throw(<span class="hljs-string">&quot;cas5&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> z != <span class="hljs-number">0xfffffffe</span> {
+        throw(<span class="hljs-string">&quot;cas6&quot;</span>)
+    }
+
+    m = [<span class="hljs-number">4</span>]<span class="hljs-keyword">byte</span>{<span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>, <span class="hljs-number">1</span>}
+    atomic.Or8(&amp;m[<span class="hljs-number">1</span>], <span class="hljs-number">0xf0</span>)
+    <span class="hljs-keyword">if</span> m[<span class="hljs-number">0</span>] != <span class="hljs-number">1</span> || m[<span class="hljs-number">1</span>] != <span class="hljs-number">0xf1</span> || m[<span class="hljs-number">2</span>] != <span class="hljs-number">1</span> || m[<span class="hljs-number">3</span>] != <span class="hljs-number">1</span> {
+        throw(<span class="hljs-string">&quot;atomicor8&quot;</span>)
+    }
+
+    m = [<span class="hljs-number">4</span>]<span class="hljs-keyword">byte</span>{<span class="hljs-number">0xff</span>, <span class="hljs-number">0xff</span>, <span class="hljs-number">0xff</span>, <span class="hljs-number">0xff</span>}
+    atomic.And8(&amp;m[<span class="hljs-number">1</span>], <span class="hljs-number">0x1</span>)
+    <span class="hljs-keyword">if</span> m[<span class="hljs-number">0</span>] != <span class="hljs-number">0xff</span> || m[<span class="hljs-number">1</span>] != <span class="hljs-number">0x1</span> || m[<span class="hljs-number">2</span>] != <span class="hljs-number">0xff</span> || m[<span class="hljs-number">3</span>] != <span class="hljs-number">0xff</span> {
+        throw(<span class="hljs-string">&quot;atomicand8&quot;</span>)
+    }
+
+    <span class="hljs-comment">// &#x6D6E;&#x70B9;&#x6570;NaN&#x68C0;&#x67E5;</span>
+    <span class="hljs-comment">// NaN&#x8868;&#x793A;&#x672A;&#x5B9A;&#x4E49;&#x6216;&#x4E0D;&#x53EF;&#x8868;&#x793A;&#x7684;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x65E0;&#x6548;&#x7684;&#x6D6E;&#x70B9;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;</span>
+    *(*<span class="hljs-keyword">uint64</span>)(unsafe.Pointer(&amp;j)) = ^<span class="hljs-keyword">uint64</span>(<span class="hljs-number">0</span>)
+    <span class="hljs-keyword">if</span> j == j {
+        throw(<span class="hljs-string">&quot;float64nan&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> !(j != j) {
+        throw(<span class="hljs-string">&quot;float64nan1&quot;</span>)
+    }
+
+    *(*<span class="hljs-keyword">uint64</span>)(unsafe.Pointer(&amp;j1)) = ^<span class="hljs-keyword">uint64</span>(<span class="hljs-number">1</span>)
+    <span class="hljs-keyword">if</span> j == j1 {
+        throw(<span class="hljs-string">&quot;float64nan2&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> !(j != j1) {
+        throw(<span class="hljs-string">&quot;float64nan3&quot;</span>)
+    }
+
+    *(*<span class="hljs-keyword">uint32</span>)(unsafe.Pointer(&amp;i)) = ^<span class="hljs-keyword">uint32</span>(<span class="hljs-number">0</span>)
+    <span class="hljs-keyword">if</span> i == i {
+        throw(<span class="hljs-string">&quot;float32nan&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> i == i {
+        throw(<span class="hljs-string">&quot;float32nan1&quot;</span>)
+    }
+
+    *(*<span class="hljs-keyword">uint32</span>)(unsafe.Pointer(&amp;i1)) = ^<span class="hljs-keyword">uint32</span>(<span class="hljs-number">1</span>)
+    <span class="hljs-keyword">if</span> i == i1 {
+        throw(<span class="hljs-string">&quot;float32nan2&quot;</span>)
+    }
+    <span class="hljs-keyword">if</span> i == i1 {
+        throw(<span class="hljs-string">&quot;float32nan3&quot;</span>)
+    }
+
+    <span class="hljs-comment">// &#x5176;&#x4ED6;&#x68C0;&#x67E5;</span>
+    testAtomic64()
+
+    <span class="hljs-keyword">if</span> _FixedStack != round2(_FixedStack) {
+        throw(<span class="hljs-string">&quot;FixedStack is not power-of-2&quot;</span>)
+    }
+
+    <span class="hljs-keyword">if</span> !checkASM() {
+        throw(<span class="hljs-string">&quot;assembly checks failed&quot;</span>)
+    }
+}
+</code></pre>
+<h4 id="2&#xFF09;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;&#x3001;&#x5904;&#x7406;&#x5668;&#x4E0E;&#x5185;&#x5B58;&#x5E38;&#x91CF;">2&#xFF09;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;&#x3001;&#x5904;&#x7406;&#x5668;&#x4E0E;&#x5185;&#x5B58;&#x5E38;&#x91CF;</h4>
+<p>argc&#xFF0C;argv&#x4F5C;&#x4E3A;&#x6765;&#x81EA;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9;args&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x53C2;&#x6570;&#x7684;&#x76F8;&#x5173;&#x4E8B;&#x5B9C;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-comment">// &#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x65F6;&#x7684;&#x5BF9;&#x6765;&#x81EA;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x5904;&#x7406;</span>
+<span class="hljs-comment">// runtime/runtime1.go</span>
+<span class="hljs-keyword">func</span> args(c <span class="hljs-keyword">int32</span>, v **<span class="hljs-keyword">byte</span>) {
+      <span class="hljs-comment">// args&#x51FD;&#x6570;&#x5C06;&#x53C2;&#x6570;&#x6307;&#x9488;&#x4FDD;&#x5B58;&#x5230;argc&#x548C;argv&#x8FD9;&#x4E24;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x4F9B;&#x5176;&#x4ED6;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#x4F7F;&#x7528;</span>
+    argc = c
+    argv = v
+      <span class="hljs-comment">// &#x8C03;&#x7528;&#x5E73;&#x53F0;&#x7279;&#x5B9A;&#x7684;sysargs</span>
+    sysargs(c, v)
+}
+</code></pre>
+<pre><code class="lang-go"><span class="hljs-comment">// runtime/os_darwin.go</span>
+<span class="hljs-comment">// Darwin&#x7CFB;&#x7EDF;&#xFF0C;&#x4EC5;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x7A0B;&#x5E8F;&#x7684;&#x53EF;&#x6267;&#x884C;&#x8DEF;&#x5F84;&#x5373;&#x53EF;&#xFF0C;&#x5927;&#x90E8;&#x5206;&#x5DE5;&#x4F5C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5DF2;&#x7ECF;&#x5E2E;&#x5FD9;&#x5B8C;&#x6210;&#x4E86;</span>
+<span class="hljs-comment">//go:linkname executablePath os.executablePath</span>
+<span class="hljs-keyword">var</span> executablePath <span class="hljs-keyword">string</span>
+
+<span class="hljs-keyword">func</span> sysargs(argc <span class="hljs-keyword">int32</span>, argv **<span class="hljs-keyword">byte</span>) {
+    <span class="hljs-comment">// &#x8DF3;&#x8FC7;&#x524D;&#x9762;&#x7684;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;</span>
+    <span class="hljs-comment">// skip over argv, envv and the first string will be the path</span>
+    n := argc + <span class="hljs-number">1</span>
+    <span class="hljs-keyword">for</span> argv_index(argv, n) != <span class="hljs-literal">nil</span> {
+        n++
+    }
+    <span class="hljs-comment">// &#x901A;&#x8FC7;&#x7CFB;&#x7EDF;&#x53C2;&#x6570;&#x83B7;&#x53D6;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x5B57;&#x7B26;&#x4E32;</span>
+    executablePath = gostringnocopy(argv_index(argv, n+<span class="hljs-number">1</span>))
+
+    <span class="hljs-comment">// strip &quot;executable_path=&quot; prefix if available, it&apos;s added after OS X 10.11.</span>
+    <span class="hljs-keyword">const</span> prefix = <span class="hljs-string">&quot;executable_path=&quot;</span>
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(executablePath) &gt; <span class="hljs-built_in">len</span>(prefix) &amp;&amp; executablePath[:<span class="hljs-built_in">len</span>(prefix)] == prefix {
+        executablePath = executablePath[<span class="hljs-built_in">len</span>(prefix):]
+    }
+}
+</code></pre>
+<pre><code class="lang-go"><span class="hljs-comment">// runtime/os_linux.go</span>
+<span class="hljs-keyword">const</span> (
+    _AT_NULL   = <span class="hljs-number">0</span>  <span class="hljs-comment">// End of vector Linux &#x8F85;&#x52A9;&#x5411;&#x91CF;&#x7EC8;&#x6B62;&#x7B26;</span>
+    _AT_PAGESZ = <span class="hljs-number">6</span>  <span class="hljs-comment">// System physical page size &#x7269;&#x7406;&#x9875;&#x5927;&#x5C0F;,&#x901A;&#x5E38;4KB</span>
+    _AT_HWCAP  = <span class="hljs-number">16</span> <span class="hljs-comment">// hardware capability bit vector &#x786C;&#x4EF6;&#x80FD;&#x529B;&#x4F4D;&#x5411;&#x91CF;&#x3002;&#x7528;&#x4E8E;&#x63CF;&#x8FF0;&#x5904;&#x7406;&#x5668;&#x652F;&#x6301;&#x7684;&#x786C;&#x4EF6;&#x7279;&#x6027;</span>
+    _AT_SECURE = <span class="hljs-number">23</span> <span class="hljs-comment">// secure mode boolean &#x5B89;&#x5168;&#x6A21;&#x5F0F;&#x5E03;&#x5C14;&#x503C;&#x3002;&#x6307;&#x793A;&#x8FDB;&#x7A0B;&#x662F;&#x5426;&#x5728;&#x5B89;&#x5168;&#x6A21;&#x5F0F;&#x4E0B;&#x8FD0;&#x884C;&#x3002;</span>
+    _AT_RANDOM = <span class="hljs-number">25</span> <span class="hljs-comment">// introduced in 2.6.29 &#x4E00;&#x4E2A;&#x968F;&#x673A;&#x503C;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5185;&#x6838;&#x5728;&#x542F;&#x52A8;&#x65F6;&#x751F;&#x6210;&#xFF0C;&#x7528;&#x4E8E;&#x589E;&#x5F3A;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x5E38;&#x7528;&#x4E8E;&#x5806;&#x6808;&#x4FDD;&#x62A4;&#x3002;</span>
+    _AT_HWCAP2 = <span class="hljs-number">26</span> <span class="hljs-comment">// hardware capability bit vector 2 &#x786C;&#x4EF6;&#x80FD;&#x529B;&#x4F4D;&#x5411;&#x91CF;2.&#x6269;&#x5C55;&#x7684;&#x786C;&#x4EF6;&#x80FD;&#x529B;&#x63CF;&#x8FF0;&#xFF0C;&#x8865;&#x5145;&#x4E0A;&#x4E00;&#x4E2A;</span>
+)
+
+<span class="hljs-comment">// linux&#x7684;ELF&#x683C;&#x5F0F;&#xFF0C;&#x9664;&#x4E86;&#x4F20;&#x9012;&#x5FC5;&#x8981;&#x53C2;&#x6570;argc&#xFF0C;argv&#xFF0C;envp&#x5916;&#x8FD8;&#x4F1A;&#x643A;&#x5E26;&#x8F85;&#x52A9;&#x5411;&#x91CF;auxv</span>
+<span class="hljs-comment">// &#x5C06;&#x67D0;&#x4E9B;&#x5185;&#x6838;&#x7EA7;&#x7684;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x4F20;&#x9012;&#x7ED9;&#x7528;&#x6237;&#x8FDB;&#x7A0B;&#xFF0C;&#x4F8B;&#x5982;&#x5185;&#x5B58;&#x7269;&#x7406;&#x9875;&#x5927;&#x5C0F;</span>
+<span class="hljs-keyword">func</span> sysargs(argc <span class="hljs-keyword">int32</span>, argv **<span class="hljs-keyword">byte</span>) {
+    n := argc + <span class="hljs-number">1</span>
+
+    <span class="hljs-comment">// skip over argv, envp to get to auxv</span>
+    <span class="hljs-keyword">for</span> argv_index(argv, n) != <span class="hljs-literal">nil</span> {
+        n++
+    }
+
+    <span class="hljs-comment">// skip NULL separator</span>
+    n++
+
+    <span class="hljs-comment">// now argv+n is auxv</span>
+    <span class="hljs-comment">// &#x8BFB;&#x53D6;&#x8F85;&#x52A9;&#x5411;&#x91CF;</span>
+    auxv := (*[<span class="hljs-number">1</span> &lt;&lt; <span class="hljs-number">28</span>]<span class="hljs-keyword">uintptr</span>)(add(unsafe.Pointer(argv), <span class="hljs-keyword">uintptr</span>(n)*goarch.PtrSize))
+    <span class="hljs-keyword">if</span> sysauxv(auxv[:]) != <span class="hljs-number">0</span> {
+        <span class="hljs-keyword">return</span>
+    }
+    <span class="hljs-comment">// In some situations we don&apos;t get a loader-provided</span>
+    <span class="hljs-comment">// auxv, such as when loaded as a library on Android.</span>
+    <span class="hljs-comment">// Fall back to /proc/self/auxv.</span>
+    <span class="hljs-comment">// &#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#x65F6;&#xFF0C;&#x53D6;&#x6587;&#x4EF6;&#x4E2D;&#x83B7;&#x53D6;</span>
+    fd := open(&amp;procAuxv[<span class="hljs-number">0</span>], <span class="hljs-number">0</span> <span class="hljs-comment">/* O_RDONLY */</span>, <span class="hljs-number">0</span>)
+    <span class="hljs-keyword">if</span> fd &lt; <span class="hljs-number">0</span> {
+        <span class="hljs-comment">// On Android, /proc/self/auxv might be unreadable (issue 9229), so we fallback to</span>
+        <span class="hljs-comment">// try using mincore to detect the physical page size.</span>
+        <span class="hljs-comment">// mincore should return EINVAL when address is not a multiple of system page size.</span>
+        <span class="hljs-comment">// &#x6587;&#x4EF6;&#x4E5F;&#x8BFB;&#x4E0D;&#x4E86;&#xFF0C;&#x5C31;&#x5C1D;&#x8BD5;&#x8C03;&#x7528;mmap&#x7B49;&#x5185;&#x5B58;&#x5206;&#x914D;&#x7CFB;&#x7EDF;&#x76F4;&#x63A5;&#x6D4B;&#x8BD5;&#x7269;&#x7406;&#x9875;&#x5927;&#x5C0F;</span>
+        <span class="hljs-keyword">const</span> size = <span class="hljs-number">256</span> &lt;&lt; <span class="hljs-number">10</span> <span class="hljs-comment">// size of memory region to allocate</span>
+        p, err := mmap(<span class="hljs-literal">nil</span>, size, _PROT_READ|_PROT_WRITE, _MAP_ANON|_MAP_PRIVATE, <span class="hljs-number">-1</span>, <span class="hljs-number">0</span>)
+        <span class="hljs-keyword">if</span> err != <span class="hljs-number">0</span> {
+            <span class="hljs-keyword">return</span>
+        }
+        <span class="hljs-keyword">var</span> n <span class="hljs-keyword">uintptr</span>
+        <span class="hljs-keyword">for</span> n = <span class="hljs-number">4</span> &lt;&lt; <span class="hljs-number">10</span>; n &lt; size; n &lt;&lt;= <span class="hljs-number">1</span> {
+            err := mincore(unsafe.Pointer(<span class="hljs-keyword">uintptr</span>(p)+n), <span class="hljs-number">1</span>, &amp;addrspace_vec[<span class="hljs-number">0</span>])
+            <span class="hljs-keyword">if</span> err == <span class="hljs-number">0</span> {
+                physPageSize = n
+                <span class="hljs-keyword">break</span>
+            }
+        }
+        <span class="hljs-keyword">if</span> physPageSize == <span class="hljs-number">0</span> {
+            physPageSize = size
+        }
+        munmap(p, size)
+        <span class="hljs-keyword">return</span>
+    }
+    <span class="hljs-comment">// &#x8BFB;&#x6587;&#x4EF6;&#x83B7;&#x53D6;</span>
+    <span class="hljs-keyword">var</span> buf [<span class="hljs-number">128</span>]<span class="hljs-keyword">uintptr</span>
+    n = read(fd, noescape(unsafe.Pointer(&amp;buf[<span class="hljs-number">0</span>])), <span class="hljs-keyword">int32</span>(unsafe.Sizeof(buf)))
+    closefd(fd)
+    <span class="hljs-keyword">if</span> n &lt; <span class="hljs-number">0</span> {
+        <span class="hljs-keyword">return</span>
+    }
+    <span class="hljs-comment">// Make sure buf is terminated, even if we didn&apos;t read</span>
+    <span class="hljs-comment">// the whole file.</span>
+    buf[<span class="hljs-built_in">len</span>(buf)<span class="hljs-number">-2</span>] = _AT_NULL
+    sysauxv(buf[:])
+}
+
+<span class="hljs-keyword">func</span> sysauxv(auxv []<span class="hljs-keyword">uintptr</span>) <span class="hljs-keyword">int</span> {
+    <span class="hljs-keyword">var</span> i <span class="hljs-keyword">int</span>
+    <span class="hljs-keyword">for</span> ; auxv[i] != _AT_NULL; i += <span class="hljs-number">2</span> {
+        tag, val := auxv[i], auxv[i+<span class="hljs-number">1</span>]
+        <span class="hljs-keyword">switch</span> tag {
+        <span class="hljs-keyword">case</span> _AT_RANDOM:
+            <span class="hljs-comment">// The kernel provides a pointer to 16-bytes</span>
+            <span class="hljs-comment">// worth of random data.</span>
+            startupRandomData = (*[<span class="hljs-number">16</span>]<span class="hljs-keyword">byte</span>)(unsafe.Pointer(val))[:]
+
+        <span class="hljs-keyword">case</span> _AT_PAGESZ:
+            <span class="hljs-comment">// &#x8BFB;&#x53D6;&#x5185;&#x5B58;&#x9875;&#x5927;&#x5C0F;</span>
+            physPageSize = val
+
+        <span class="hljs-keyword">case</span> _AT_SECURE:
+            secureMode = val == <span class="hljs-number">1</span>
+        }
+
+        archauxv(tag, val)
+        vdsoauxv(tag, val)
+    }
+    <span class="hljs-keyword">return</span> i / <span class="hljs-number">2</span>
+}
+</code></pre>
+<p>&#x5904;&#x7406;&#x5668;&#x76F8;&#x5173;</p>
+<pre><code class="lang-go"><span class="hljs-comment">// runtime/os_darwin.go</span>
+<span class="hljs-comment">// BSD interface for threading.</span>
+<span class="hljs-keyword">func</span> osinit() {
+    <span class="hljs-comment">// pthread_create delayed until end of goenvs so that we</span>
+    <span class="hljs-comment">// can look at the environment first.</span>
+
+    ncpu = getncpu()             <span class="hljs-comment">// &#x83B7;&#x53D6;CPU&#x6838;&#x6570;</span>
+    physPageSize = getPageSize() <span class="hljs-comment">// &#x83B7;&#x53D6;&#x7269;&#x7406;&#x9875;&#x5927;&#x5C0F;</span>
+
+    osinit_hack() <span class="hljs-comment">// &#x6267;&#x884C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7279;&#x5B9A;&#x7684;&#x521D;&#x59CB;&#x5316;&#x64CD;&#x4F5C;</span>
+    <span class="hljs-comment">// &#x4F8B;&#x5982;&#x8BBE;&#x7F6E;&#x7EBF;&#x7A0B;&#x5806;&#x6808;&#x5927;&#x5C0F;&#x3001;&#x521D;&#x59CB;&#x5316;&#x7CFB;&#x7EDF;&#x7EBF;&#x7A0B;&#x3001;&#x5904;&#x7406;&#x7279;&#x6B8A;&#x7684;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;</span>
+}
+</code></pre>
+<pre><code class="lang-go"><span class="hljs-comment">// runtime/os_Linux.go</span>
+<span class="hljs-keyword">func</span> osinit() {
+    <span class="hljs-comment">// &#x83B7;&#x53D6;&#x5904;&#x7406;&#x5668;&#x6570;&#x91CF;</span>
+    ncpu = getproccount()
+    <span class="hljs-comment">// &#x83B7;&#x53D6;&#x7269;&#x7406;&#x5927;&#x9875;&#x9762;&#x5927;&#x5C0F;</span>
+    physHugePageSize = getHugePageSize()
+    <span class="hljs-comment">// cgo&#x542F;&#x7528;&#x540E;&#x5BF9;&#x4FE1;&#x53F7;&#x7684;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x5904;&#x7406;</span>
+    <span class="hljs-keyword">if</span> iscgo {
+        <span class="hljs-comment">// #42494 glibc and musl reserve some signals for</span>
+        <span class="hljs-comment">// internal use and require they not be blocked by</span>
+        <span class="hljs-comment">// the rest of a normal C runtime. When the go runtime</span>
+        <span class="hljs-comment">// blocks...unblocks signals, temporarily, the blocked</span>
+        <span class="hljs-comment">// interval of time is generally very short. As such,</span>
+        <span class="hljs-comment">// these expectations of *libc code are mostly met by</span>
+        <span class="hljs-comment">// the combined go+cgo system of threads. However,</span>
+        <span class="hljs-comment">// when go causes a thread to exit, via a return from</span>
+        <span class="hljs-comment">// mstart(), the combined runtime can deadlock if</span>
+        <span class="hljs-comment">// these signals are blocked. Thus, don&apos;t block these</span>
+        <span class="hljs-comment">// signals when exiting threads.</span>
+        <span class="hljs-comment">// - glibc: SIGCANCEL (32), SIGSETXID (33)</span>
+        <span class="hljs-comment">// - musl: SIGTIMER (32), SIGCANCEL (33), SIGSYNCCALL (34)</span>
+        <span class="hljs-comment">// &#x5982;&#x679C;&#x542F;&#x7528;&#x4E86;CGO&#xFF0C;&#x8FDB;&#x884C;&#x4FE1;&#x53F7;&#x5904;&#x7406;&#x7684;&#x7279;&#x6B8A;&#x8BBE;&#x7F6E;</span>
+
+        <span class="hljs-comment">// #42494 glibc &#x548C; musl &#x4FDD;&#x7559;&#x4E86;&#x4E00;&#x4E9B;&#x4FE1;&#x53F7;&#x7528;&#x4E8E;&#x5185;&#x90E8;&#x4F7F;&#x7528;&#xFF0C;</span>
+        <span class="hljs-comment">// &#x5E76;&#x8981;&#x6C42;&#x8FD9;&#x4E9B;&#x4FE1;&#x53F7;&#x5728;&#x6B63;&#x5E38;&#x7684; C &#x8FD0;&#x884C;&#x65F6;&#x4E0D;&#x80FD;&#x88AB;&#x963B;&#x585E;&#x3002;</span>
+        <span class="hljs-comment">// &#x5F53; Go &#x8FD0;&#x884C;&#x65F6;&#x6682;&#x65F6;&#x963B;&#x585E;&#x548C;&#x89E3;&#x9664;&#x963B;&#x585E;&#x4FE1;&#x53F7;&#x65F6;&#xFF0C;</span>
+        <span class="hljs-comment">// &#x8FD9;&#x79CD;&#x963B;&#x585E;&#x7684;&#x65F6;&#x95F4;&#x95F4;&#x9694;&#x901A;&#x5E38;&#x5F88;&#x77ED;&#x3002;&#x56E0;&#x6B64;&#xFF0C;libc &#x4EE3;&#x7801;&#x7684;&#x8FD9;&#x4E9B;&#x9884;&#x671F;</span>
+        <span class="hljs-comment">// &#x5728; Go + CGO &#x7CFB;&#x7EDF;&#x7684;&#x7EBF;&#x7A0B;&#x4E2D;&#x57FA;&#x672C;&#x4E0A;&#x90FD;&#x80FD;&#x5F97;&#x5230;&#x6EE1;&#x8DB3;&#x3002;</span>
+        <span class="hljs-comment">// &#x4F46;&#x662F;&#xFF0C;&#x5F53; Go &#x5BFC;&#x81F4;&#x7EBF;&#x7A0B;&#x9000;&#x51FA;&#x65F6;&#xFF0C;&#x901A;&#x8FC7;&#x4ECE; mstart() &#x8FD4;&#x56DE;&#xFF0C;</span>
+        <span class="hljs-comment">// &#x5982;&#x679C;&#x8FD9;&#x4E9B;&#x4FE1;&#x53F7;&#x88AB;&#x963B;&#x585E;&#xFF0C;&#x7EC4;&#x5408;&#x8FD0;&#x884C;&#x65F6;&#x53EF;&#x80FD;&#x4F1A;&#x6B7B;&#x9501;&#x3002;</span>
+        <span class="hljs-comment">// &#x56E0;&#x6B64;&#xFF0C;&#x4E0D;&#x8981;&#x5728;&#x9000;&#x51FA;&#x7EBF;&#x7A0B;&#x65F6;&#x963B;&#x585E;&#x8FD9;&#x4E9B;&#x4FE1;&#x53F7;&#x3002;</span>
+        <span class="hljs-comment">// - glibc: SIGCANCEL (32), SIGSETXID (33)</span>
+        <span class="hljs-comment">// - musl: SIGTIMER (32), SIGCANCEL (33), SIGSYNCCALL (34)</span>
+        sigdelset(&amp;sigsetAllExiting, <span class="hljs-number">32</span>)
+        sigdelset(&amp;sigsetAllExiting, <span class="hljs-number">33</span>)
+        sigdelset(&amp;sigsetAllExiting, <span class="hljs-number">34</span>)
+    }
+    <span class="hljs-comment">// &#x67B6;&#x6784;&#x76F8;&#x5173;&#x521D;&#x59CB;&#x5316;</span>
+    osArchInit()
+}
+</code></pre>
+<p>macOS&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x7684;&#x7279;&#x6B8A;&#x4E4B;&#x5904;&#x5728;&#x4E8E;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x5957;&#x8C03;&#x7528;&#x63A5;&#x53E3;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;Mach&#x8C03;&#x7528;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x5219;&#x662F;POSIX&#x8C03;&#x7528;&#x3002;Mach&#x662F;NeXTSTEP&#x9057;&#x7559;&#x4E0B;&#x6765;&#x7684;&#x4EA7;&#x7269;&#xFF0C;&#x5176;BSD&#x5C42;&#x672C;&#x8D28;&#x4E0A;&#x662F;&#x5BF9;Mach&#x5185;&#x6838;&#x7684;&#x4E00;&#x5C42;&#x5C01;&#x88C5;&#x3002;&#x5C3D;&#x7BA1;&#x7528;&#x6237;&#x6001;&#x8FDB;&#x7A0B;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;Mach&#x8C03;&#x7528;&#xFF0C;&#x4F46;&#x51FA;&#x4E8E;&#x901A;&#x7528;&#x6027;&#x7684;&#x8003;&#x8651;&#xFF0C;&#x7269;&#x7406;&#x9875;&#x5927;&#x5C0F;&#x83B7;&#x53D6;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x901A;&#x8FC7;POSIX sysctl&#x8FD9;&#x4E2A;&#x7CFB;&#x7EDF;&#x8C03;&#x7528;&#x8FDB;&#x884C;&#x83B7;&#x53D6;&#x3002;</p>
+<p>&#x7269;&#x7406;&#x5927;&#x9875;&#x9762;&#xFF08;HugePages&#xFF09;</p>
+<p>&#x4E00;&#x79CD;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x6280;&#x672F;&#xFF0C;&#x5141;&#x8BB8;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4F7F;&#x7528;&#x6BD4;&#x6807;&#x51C6;&#x9875;&#x9762;&#xFF08;&#x901A;&#x5E38;&#x662F;4KB&#x6216;&#x8005;8KB&#xFF09;&#x66F4;&#x5927;&#x7684;&#x5185;&#x5B58;&#x9875;&#x9762;&#xFF0C;&#x5927;&#x9875;&#x9762;&#x7684;&#x5927;&#x5C0F;&#x901A;&#x5E38;&#x662F;2MB&#x6216;&#x8005;1GB&#xFF0C;&#x5177;&#x4F53;&#x53D6;&#x51B3;&#x4E8E;&#x7CFB;&#x7EDF;&#x548C;&#x786C;&#x4EF6;&#x67B6;&#x6784;&#x3002;</p>
+<p>&#x4F18;&#x52BF;&#xFF1A;</p>
+<ul>
+<li>&#x51CF;&#x5C11;&#x9875;&#x8868;&#x5F00;&#x9500;&#xFF1A;&#x4F7F;&#x7528;&#x5927;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x663E;&#x8457;&#x51CF;&#x5C11;&#x9875;&#x8868;&#x9879;&#x7684;&#x6570;&#x91CF;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x9875;&#x8868;&#x9879;&#x6620;&#x5C04;&#x7684;&#x5185;&#x5B58;&#x8303;&#x56F4;&#x66F4;&#x5927;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x964D;&#x4F4E;&#x9875;&#x8868;&#x5F00;&#x9500;&#xFF0C;&#x63D0;&#x9AD8;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x7684;&#x6548;&#x7387;&#x3002;</li>
+<li>&#x63D0;&#x9AD8;TLB&#x547D;&#x4E2D;&#x7387;&#xFF1A;&#x8F6C;&#x6362;&#x540E;&#x5907;&#x7F13;&#x51B2;&#x5668;&#x662F;&#x4E00;&#x79CD;&#x7528;&#x4E8E;&#x7F13;&#x5B58;&#x865A;&#x62DF;&#x5730;&#x5740;&#x5230;&#x7269;&#x7406;&#x5730;&#x5740;&#x6620;&#x5C04;&#x786C;&#x4EF6;&#x7F13;&#x5B58;&#x3002;&#x5927;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;TLB&#x7684;&#x538B;&#x529B;&#xFF0C;&#x63D0;&#x9AD8;TLB&#x7684;&#x547D;&#x4E2D;&#x7387;&#xFF0C;&#x4ECE;&#x800C;&#x51CF;&#x5C11;&#x5730;&#x5740;&#x8F6C;&#x6362;&#x7684;&#x5F00;&#x9500;&#xFF0C;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x3002;</li>
+<li>&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x788E;&#x7247;&#xFF1A;&#x4F7F;&#x7528;&#x5927;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x788E;&#x7247;&#xFF0C;&#x56E0;&#x4E3A;&#x7CFB;&#x7EDF;&#x5206;&#x914D;&#x7684;&#x5927;&#x9875;&#x9762;&#x5757;&#x8F83;&#x5C11;&#xFF0C;&#x5206;&#x914D;&#x548C;&#x7BA1;&#x7406;&#x5185;&#x5B58;&#x5757;&#x7684;&#x64CD;&#x4F5C;&#x66F4;&#x9AD8;&#x6548;&#x3002;</li>
+<li>&#x63D0;&#x9AD8;I/O&#x6027;&#x80FD;&#xFF1A;&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F7F;&#x7528;&#x5927;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;I/O&#x6027;&#x80FD;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x5BF9;&#x4E8E;&#x5927;&#x89C4;&#x6A21;&#x7684;&#x6570;&#x636E;&#x5904;&#x7406;&#x548C;&#x4F20;&#x8F93;&#xFF0C;&#x56E0;&#x4E3A;&#x5927;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x5185;&#x5B58;&#x8BBF;&#x95EE;&#x7684;&#x6B21;&#x6570;&#x548C;&#x5F00;&#x9500;&#x3002;</li>
+</ul>
+<p>&#x5E94;&#x7528;&#x573A;&#x666F;</p>
+<p>&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#xFF08;DBMS&#xFF09;&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x901A;&#x5E38;&#x9700;&#x8981;&#x5904;&#x7406;&#x5927;&#x91CF;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F7F;&#x7528;&#x5927;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x63D0;&#x9AD8;&#x7F13;&#x5B58;&#x6548;&#x7387;&#x548C;&#x67E5;&#x8BE2;&#x6027;&#x80FD;&#x3002;&#x4F8B;&#x5982;&#xFF0C;Oracle &#x548C; PostgreSQL &#x6570;&#x636E;&#x5E93;&#x90FD;&#x652F;&#x6301;&#x4F7F;&#x7528;&#x5927;&#x9875;&#x9762;&#x6765;&#x63D0;&#x5347;&#x6027;&#x80FD;&#x3002;</p>
+<p>&#x865A;&#x62DF;&#x5316;&#x6280;&#x672F;&#xFF1A;&#x865A;&#x62DF;&#x673A;&#x76D1;&#x63A7;&#x7A0B;&#x5E8F;&#xFF08;Hypervisor&#xFF09;&#x5982; KVM &#x548C; VMware &#x4F7F;&#x7528;&#x5927;&#x9875;&#x9762;&#x6765;&#x4F18;&#x5316;&#x865A;&#x62DF;&#x673A;&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#xFF0C;&#x63D0;&#x9AD8;&#x6574;&#x4F53;&#x6027;&#x80FD;&#x3002;</p>
+<p>&#x9AD8;&#x6027;&#x80FD;&#x8BA1;&#x7B97;&#xFF08;HPC&#xFF09;&#xFF1A;&#x79D1;&#x5B66;&#x8BA1;&#x7B97;&#x548C;&#x6A21;&#x62DF;&#x901A;&#x5E38;&#x9700;&#x8981;&#x5927;&#x91CF;&#x7684;&#x5185;&#x5B58;&#x548C;&#x9AD8;&#x6548;&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x3002;&#x4F7F;&#x7528;&#x5927;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x663E;&#x8457;&#x63D0;&#x9AD8;&#x8BA1;&#x7B97;&#x6027;&#x80FD;&#x3002;</p>
+<p>&#x5927;&#x6570;&#x636E;&#x5904;&#x7406;&#xFF1A;Hadoop &#x548C; Spark &#x7B49;&#x5927;&#x6570;&#x636E;&#x5904;&#x7406;&#x6846;&#x67B6;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x5927;&#x9875;&#x9762;&#x6765;&#x63D0;&#x9AD8;&#x5185;&#x5B58;&#x8BBF;&#x95EE;&#x6548;&#x7387;&#x548C;&#x6570;&#x636E;&#x5904;&#x7406;&#x901F;&#x5EA6;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x5927;&#x9875;&#x9762;&#x7684;&#x6CE8;&#x610F;&#x4E8B;&#x9879;</p>
+<p>&#x5185;&#x5B58;&#x6D88;&#x8017;&#xFF1A;&#x5927;&#x9875;&#x9762;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x6D88;&#x8017;&#x589E;&#x52A0;&#xFF0C;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x5927;&#x9875;&#x9762;&#x5FC5;&#x987B;&#x5168;&#x90E8;&#x4F7F;&#x7528;&#xFF0C;&#x5373;&#x4F7F;&#x53EA;&#x9700;&#x8981;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;&#x8FD9;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x6D6A;&#x8D39;&#x5185;&#x5B58;&#x8D44;&#x6E90;&#x3002;</p>
+<p>&#x914D;&#x7F6E;&#x590D;&#x6742;&#x6027;&#xFF1A;&#x914D;&#x7F6E;&#x548C;&#x7BA1;&#x7406;&#x5927;&#x9875;&#x9762;&#x53EF;&#x80FD;&#x6BD4;&#x6807;&#x51C6;&#x9875;&#x9762;&#x66F4;&#x590D;&#x6742;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5728;&#x9700;&#x8981;&#x624B;&#x52A8;&#x8C03;&#x6574;&#x5185;&#x6838;&#x53C2;&#x6570;&#x548C;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8BBE;&#x7F6E;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x3002;</p>
+<p>&#x517C;&#x5BB9;&#x6027;&#xFF1A;&#x5E76;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x548C;&#x5DE5;&#x4F5C;&#x8D1F;&#x8F7D;&#x90FD;&#x9002;&#x5408;&#x4F7F;&#x7528;&#x5927;&#x9875;&#x9762;&#xFF0C;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;&#x548C;&#x4F18;&#x5316;&#x3002;</p>
+<h3 id="4&#x3001;&#x8FD0;&#x884C;&#x65F6;&#x7EC4;&#x4EF6;&#x6838;&#x5FC3;">4&#x3001;&#x8FD0;&#x884C;&#x65F6;&#x7EC4;&#x4EF6;&#x6838;&#x5FC3;</h3>
+<pre><code>    // &#x7CFB;&#x7EDF;&#x521D;&#x59CB;&#x5316;
+    CALL    runtime&#xB7;osinit(SB)
+    // &#x8C03;&#x5EA6;&#x5668;&#x521D;&#x59CB;&#x5316;
+    CALL    runtime&#xB7;schedinit(SB)
+
+    // create a new goroutine to start program
+    // runtime.main&#x51FD;&#x6570;&#x503C;&#x4F20;&#x7ED9;newproc&#x51FD;&#x6570;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;goroutine&#x6765;&#x542F;&#x52A8;&#x7A0B;&#x5E8F;
+    MOVQ    $runtime&#xB7;mainPC(SB), AX        // entry
+    PUSHQ    AX
+    CALL    runtime&#xB7;newproc(SB)
+    POPQ    AX
+
+    // &#x542F;&#x52A8;&#x8FD9;&#x4E2A;M&#xFF0C;mstart&#x5E94;&#x8BE5;&#x6C38;&#x4E0D;&#x8FD4;&#x56DE;
+    // start this M
+    CALL    runtime&#xB7;mstart(SB)
+
+    CALL    runtime&#xB7;abort(SB)    // mstart should never return
+    RET
+
+// mainPC is a function value for runtime.main, to be passed to newproc.
+// The reference to runtime.main is made via ABIInternal, since the
+// actual function (not the ABI0 wrapper) is needed by newproc.
+// mainPC&#x662F;&#x4E00;&#x4E2A;&#x8868;&#x793A;runtime.main&#x51FD;&#x6570;&#x503C;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x5C06;&#x88AB;&#x4F20;&#x9012;&#x7ED9;newproc&#x51FD;&#x6570;&#x3002;
+// runtime.main&#x7684;&#x5F15;&#x7528;&#x901A;&#x8FC7;ABIInternal&#x8FDB;&#x884C;&#xFF0C;&#x56E0;&#x4E3A;newproc&#x9700;&#x8981;&#x7684;&#x662F;&#x5B9E;&#x9645;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x800C;&#x4E0D;&#x662F;ABI0&#x5305;&#x88C5;&#x5668;&#x3002;
+// DATA &#x5B9A;&#x4E49;&#x4E86;runtime.mainPC&#x7B26;&#x53F7;&#xFF0C;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x4E3A;0&#xFF0C;&#x5927;&#x5C0F;&#x4E3A;8&#x5B57;&#x8282;
+// runtime&#xB7;main&lt;ABIInternal&gt;(SB)&#x8FD9;&#x4E2A;&#x503C;&#x662F;runtime.main&#x51FD;&#x6570;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x4F7F;&#x7528;ABIInternal&#x8C03;&#x7528;&#x7EA6;&#x5B9A;
+DATA    runtime&#xB7;mainPC+0(SB)/8,$runtime&#xB7;main&lt;ABIInternal&gt;(SB)
+// &#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x7B26;&#x53F7;runtime&#xB7;mainPC&#xFF0C;&#x8FD9;&#x4E2A;&#x5168;&#x5C40;&#x7B26;&#x53F7;&#x4F4D;&#x4E8E;&#x53EA;&#x8BFB;&#x6570;&#x636E;&#x6BB5;&#xFF0C;&#x5927;&#x5C0F;&#x4E3A;8&#x4E2A;&#x5B57;&#x8282;
+GLOBL    runtime&#xB7;mainPC(SB),RODATA,$8
+</code></pre><ul>
+<li>schedinit&#xFF1A;&#x8FDB;&#x884C;&#x5404;&#x79CD;&#x8FD0;&#x884C;&#x65F6;&#x7EC4;&#x4EF6;&#x521D;&#x59CB;&#x5316;&#x5DE5;&#x4F5C;&#xFF0C;&#x5305;&#x62EC;&#x8C03;&#x5EA6;&#x5668;&#xFF0C;&#x5185;&#x5B58;&#x5206;&#x914D;&#x5668;&#xFF0C;&#x56DE;&#x6536;&#x5668;&#x7B49;&#x3002;</li>
+<li>newproc&#xFF1A;&#x8D1F;&#x8D23;&#x6839;&#x636E;&#x4E3B;&#x534F;&#x7A0B;&#xFF08;&#x5373;main&#xFF09;&#x5165;&#x53E3;&#x5730;&#x5740;&#x521B;&#x5EFA;&#x53EF;&#x88AB;&#x8FD0;&#x884C;&#x65F6;&#x8C03;&#x5EA6;&#x7684;&#x6267;&#x884C;&#x5355;&#x5143;&#x3002;</li>
+<li>mstart&#xFF1A;&#x5F00;&#x59CB;&#x542F;&#x52A8;&#x8C03;&#x5EA6;&#x5668;&#x7684;&#x8C03;&#x5EA6;&#x5FAA;&#x73AF;&#x3002;</li>
+</ul>
+<pre><code class="lang-go"><span class="hljs-comment">// The bootstrap sequence is:</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//    call osinit</span>
+<span class="hljs-comment">//    call schedinit</span>
+<span class="hljs-comment">//    make &amp; queue new G</span>
+<span class="hljs-comment">//    call runtime&#xB7;mstart</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// The new G calls runtime&#xB7;main.</span>
+<span class="hljs-comment">// todo &#x5F85;&#x7814;&#x7A76;</span>
+<span class="hljs-keyword">func</span> schedinit() {
+    lockInit(&amp;sched.lock, lockRankSched)
+    lockInit(&amp;sched.sysmonlock, lockRankSysmon)
+    lockInit(&amp;sched.deferlock, lockRankDefer)
+    lockInit(&amp;sched.sudoglock, lockRankSudog)
+    lockInit(&amp;deadlock, lockRankDeadlock)
+    lockInit(&amp;paniclk, lockRankPanic)
+    lockInit(&amp;allglock, lockRankAllg)
+    lockInit(&amp;allpLock, lockRankAllp)
+    lockInit(&amp;reflectOffs.lock, lockRankReflectOffs)
+    lockInit(&amp;finlock, lockRankFin)
+    lockInit(&amp;trace.bufLock, lockRankTraceBuf)
+    lockInit(&amp;trace.stringsLock, lockRankTraceStrings)
+    lockInit(&amp;trace.lock, lockRankTrace)
+    lockInit(&amp;cpuprof.lock, lockRankCpuprof)
+    lockInit(&amp;trace.stackTab.lock, lockRankTraceStackTab)
+    allocmLock.init(lockRankAllocmR, lockRankAllocmRInternal, lockRankAllocmW)
+    execLock.init(lockRankExecR, lockRankExecRInternal, lockRankExecW)
+    <span class="hljs-comment">// Enforce that this lock is always a leaf lock.</span>
+    <span class="hljs-comment">// All of this lock&apos;s critical sections should be</span>
+    <span class="hljs-comment">// extremely short.</span>
+    lockInit(&amp;memstats.heapStats.noPLock, lockRankLeafRank)
+
+    <span class="hljs-comment">// raceinit must be the first call to race detector.</span>
+    <span class="hljs-comment">// In particular, it must be done before mallocinit below calls racemapshadow.</span>
+    gp := getg()
+    <span class="hljs-keyword">if</span> raceenabled {
+        gp.racectx, raceprocctx0 = raceinit()
+    }
+
+    <span class="hljs-comment">// &#x6700;&#x5927;&#x7CFB;&#x7EDF;&#x7EBF;&#x7A0B;&#x6570;&#x91CF;&#x9650;&#x5236;</span>
+    sched.maxmcount = <span class="hljs-number">10000</span>
+
+    <span class="hljs-comment">// The world starts stopped.</span>
+    <span class="hljs-comment">// go&#x8FD0;&#x884C;&#x65F6;&#x662F;&#x5426;&#x5904;&#x4E8E;&#x505C;&#x6B62;&#x72B6;&#x6001;</span>
+    worldStopped()
+
+    moduledataverify()
+    stackinit()  <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x6267;&#x884C;&#x6808;</span>
+    mallocinit() <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x5185;&#x5B58;&#x5206;&#x914D;&#x5668;</span>
+    godebug := getGodebugEarly()
+    initPageTrace(godebug) <span class="hljs-comment">// must run after mallocinit but before anything allocates</span>
+    cpuinit(godebug)       <span class="hljs-comment">// must run before alginit</span>
+    alginit()              <span class="hljs-comment">// maps, hash, fastrand must not be used before this call</span>
+    fastrandinit()         <span class="hljs-comment">// must run before mcommoninit</span>
+    mcommoninit(gp.m, <span class="hljs-number">-1</span>)  <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x5F53;&#x524D;&#x7CFB;&#x7EDF;&#x7EBF;&#x7A0B;</span>
+    modulesinit()          <span class="hljs-comment">// provides activeModules</span>
+    typelinksinit()        <span class="hljs-comment">// uses maps, activeModules</span>
+    <span class="hljs-comment">// &#x63A5;&#x53E3;&#x76F8;&#x5173;&#x521D;&#x59CB;&#x5316;</span>
+    itabsinit()  <span class="hljs-comment">// uses activeModules</span>
+    stkobjinit() <span class="hljs-comment">// must run before GC starts</span>
+
+    sigsave(&amp;gp.m.sigmask)
+    initSigmask = gp.m.sigmask
+
+    goargs()
+    goenvs()
+    secure()
+    parsedebugvars()
+    gcinit() <span class="hljs-comment">// &#x5783;&#x573E;&#x56DE;&#x6536;&#x5668;&#x521D;&#x59CB;&#x5316;</span>
+
+    <span class="hljs-comment">// if disableMemoryProfiling is set, update MemProfileRate to 0 to turn off memprofile.</span>
+    <span class="hljs-comment">// Note: parsedebugvars may update MemProfileRate, but when disableMemoryProfiling is</span>
+    <span class="hljs-comment">// set to true by the linker, it means that nothing is consuming the profile, it is</span>
+    <span class="hljs-comment">// safe to set MemProfileRate to 0.</span>
+    <span class="hljs-keyword">if</span> disableMemoryProfiling {
+        MemProfileRate = <span class="hljs-number">0</span>
+    }
+
+    lock(&amp;sched.lock)
+    sched.lastpoll.Store(nanotime())
+    <span class="hljs-comment">// &#x521B;&#x5EFA;P</span>
+    <span class="hljs-comment">// &#x786E;&#x5B9A;P&#x7684;&#x6570;&#x91CF;</span>
+    procs := ncpu
+    <span class="hljs-keyword">if</span> n, ok := atoi32(gogetenv(<span class="hljs-string">&quot;GOMAXPROCS&quot;</span>)); ok &amp;&amp; n &gt; <span class="hljs-number">0</span> {
+        procs = n
+    }
+    <span class="hljs-keyword">if</span> procresize(procs) != <span class="hljs-literal">nil</span> {
+        throw(<span class="hljs-string">&quot;unknown runnable goroutine during bootstrap&quot;</span>)
+    }
+    unlock(&amp;sched.lock)
+
+    <span class="hljs-comment">// World is effectively started now, as P&apos;s can run.</span>
+    worldStarted()
+
+    <span class="hljs-comment">// For cgocheck &gt; 1, we turn on the write barrier at all times</span>
+    <span class="hljs-comment">// and check all pointer writes. We can&apos;t do this until after</span>
+    <span class="hljs-comment">// procresize because the write barrier needs a P.</span>
+    <span class="hljs-keyword">if</span> debug.cgocheck &gt; <span class="hljs-number">1</span> {
+        writeBarrier.cgo = <span class="hljs-literal">true</span>
+        writeBarrier.enabled = <span class="hljs-literal">true</span>
+        <span class="hljs-keyword">for</span> _, pp := <span class="hljs-keyword">range</span> allp {
+            pp.wbBuf.reset()
+        }
+    }
+
+    <span class="hljs-keyword">if</span> buildVersion == <span class="hljs-string">&quot;&quot;</span> {
+        <span class="hljs-comment">// Condition should never trigger. This code just serves</span>
+        <span class="hljs-comment">// to ensure runtime&#xB7;buildVersion is kept in the resulting binary.</span>
+        buildVersion = <span class="hljs-string">&quot;unknown&quot;</span>
+    }
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(modinfo) == <span class="hljs-number">1</span> {
+        <span class="hljs-comment">// Condition should never trigger. This code just serves</span>
+        <span class="hljs-comment">// to ensure runtime&#xB7;modinfo is kept in the resulting binary.</span>
+        modinfo = <span class="hljs-string">&quot;&quot;</span>
+    }
+}
+</code></pre>
+<h2 id="&#x4E8C;&#x3001;&#x4E3B;&#x534F;&#x7A0B;">&#x4E8C;&#x3001;&#x4E3B;&#x534F;&#x7A0B;</h2>
+<p>&#x5728;&#x8C03;&#x5EA6;&#x5668;&#x521D;&#x59CB;&#x5316;&#x5B8C;&#x6210;&#x540E;&#x5E76;&#x4E0D;&#x4F1A;&#x7ACB;&#x5373;&#x6267;&#x884C;runtime.main&#xFF0C;&#x800C;&#x662F;&#x5728;&#x540E;&#x7EED;&#x7684;mstart&#x8C03;&#x7528;&#x4E2D;&#x88AB;&#x8C03;&#x5EA6;&#x5668;&#x8C03;&#x5EA6;&#x6267;&#x884C;&#x3002;&#x5728;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x53EA;&#x4F1A;&#x5C06;runtime.main&#x7684;&#x5165;&#x53E3;&#x5730;&#x5740;&#x538B;&#x6808;&#xFF0C;&#x8FDB;&#x800C;&#x5C06;&#x5176;&#x4F20;&#x9012;&#x7ED9;newproc&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#xFF0C;&#x800C;&#x540E;newproc&#x5B8C;&#x6210;G&#x7684;&#x521B;&#x5EFA;&#x4FDD;&#x5B58;&#x5230;G&#x7684;&#x8FD0;&#x884C;&#x73B0;&#x573A;&#x4E2D;&#xFF0C;&#x56E0;&#x6B64;&#x771F;&#x6B63;&#x6267;&#x884C;&#x4F1A;&#x7B49;&#x5230;mstart&#x540E;&#x624D;&#x4F1A;&#x88AB;&#x8C03;&#x5EA6;&#x6267;&#x884C;&#x3002;</p>
+<pre><code class="lang-go">
+<span class="hljs-comment">// The main goroutine.</span>
+<span class="hljs-comment">// runtime.main&#x51FD;&#x6570;&#x539F;&#x578B;</span>
+<span class="hljs-keyword">func</span> main() {
+    mp := getg().m
+
+    <span class="hljs-comment">// Racectx of m0-&gt;g0 is used only as the parent of the main goroutine.</span>
+    <span class="hljs-comment">// It must not be used for anything else.</span>
+    mp.g0.racectx = <span class="hljs-number">0</span>
+
+    <span class="hljs-comment">// Max stack size is 1 GB on 64-bit, 250 MB on 32-bit.</span>
+    <span class="hljs-comment">// Using decimal instead of binary GB and MB because</span>
+    <span class="hljs-comment">// they look nicer in the stack overflow failure message.</span>
+    <span class="hljs-comment">// &#x6267;&#x884C;&#x6808;&#x6700;&#x5927;&#x9650;&#x5236;</span>
+    <span class="hljs-keyword">if</span> goarch.PtrSize == <span class="hljs-number">8</span> {
+        maxstacksize = <span class="hljs-number">1000000000</span>
+    } <span class="hljs-keyword">else</span> {
+        maxstacksize = <span class="hljs-number">250000000</span>
+    }
+
+    <span class="hljs-comment">// An upper limit for max stack size. Used to avoid random crashes</span>
+    <span class="hljs-comment">// after calling SetMaxStack and trying to allocate a stack that is too big,</span>
+    <span class="hljs-comment">// since stackalloc works with 32-bit sizes.</span>
+    maxstackceiling = <span class="hljs-number">2</span> * maxstacksize
+
+    <span class="hljs-comment">// Allow newproc to start new Ms.</span>
+    mainStarted = <span class="hljs-literal">true</span>
+
+    <span class="hljs-keyword">if</span> GOARCH != <span class="hljs-string">&quot;wasm&quot;</span> { <span class="hljs-comment">// no threads on wasm yet, so no sysmon</span>
+        <span class="hljs-comment">// &#x542F;&#x52A8;&#x7CFB;&#x7EDF;&#x540E;&#x53F0;&#x76D1;&#x63A7;</span>
+        systemstack(<span class="hljs-keyword">func</span>() {
+            newm(sysmon, <span class="hljs-literal">nil</span>, <span class="hljs-number">-1</span>)
+        })
+    }
+
+    <span class="hljs-comment">// Lock the main goroutine onto this, the main OS thread,</span>
+    <span class="hljs-comment">// during initialization. Most programs won&apos;t care, but a few</span>
+    <span class="hljs-comment">// do require certain calls to be made by the main thread.</span>
+    <span class="hljs-comment">// Those can arrange for main.main to run in the main thread</span>
+    <span class="hljs-comment">// by calling runtime.LockOSThread during initialization</span>
+    <span class="hljs-comment">// to preserve the lock.</span>
+    lockOSThread()
+
+    <span class="hljs-keyword">if</span> mp != &amp;m0 {
+        throw(<span class="hljs-string">&quot;runtime.main not on m0&quot;</span>)
+    }
+
+    <span class="hljs-comment">// Record when the world started.</span>
+    <span class="hljs-comment">// Must be before doInit for tracing init.</span>
+    runtimeInitTime = nanotime()
+    <span class="hljs-keyword">if</span> runtimeInitTime == <span class="hljs-number">0</span> {
+        throw(<span class="hljs-string">&quot;nanotime returning zero&quot;</span>)
+    }
+
+    <span class="hljs-keyword">if</span> debug.inittrace != <span class="hljs-number">0</span> {
+        inittrace.id = getg().goid
+        inittrace.active = <span class="hljs-literal">true</span>
+    }
+
+    <span class="hljs-comment">// runtime&#x5305;&#x4E2D;&#x7684;init&#x51FD;&#x6570;&#x6267;&#x884C;</span>
+    doInit(&amp;runtime_inittask) <span class="hljs-comment">// Must be before defer.</span>
+
+    <span class="hljs-comment">// Defer unlock so that runtime.Goexit during init does the unlock too.</span>
+    needUnlock := <span class="hljs-literal">true</span>
+    <span class="hljs-keyword">defer</span> <span class="hljs-keyword">func</span>() {
+        <span class="hljs-keyword">if</span> needUnlock {
+            unlockOSThread()
+        }
+    }()
+
+    <span class="hljs-comment">// &#x542F;&#x52A8;&#x5783;&#x573E;&#x56DE;&#x6536;&#x5668;&#x540E;&#x53F0;&#x64CD;&#x4F5C;</span>
+    gcenable()
+
+    main_init_done = <span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">bool</span>)
+    <span class="hljs-keyword">if</span> iscgo {
+        <span class="hljs-keyword">if</span> _cgo_thread_start == <span class="hljs-literal">nil</span> {
+            throw(<span class="hljs-string">&quot;_cgo_thread_start missing&quot;</span>)
+        }
+        <span class="hljs-keyword">if</span> GOOS != <span class="hljs-string">&quot;windows&quot;</span> {
+            <span class="hljs-keyword">if</span> _cgo_setenv == <span class="hljs-literal">nil</span> {
+                throw(<span class="hljs-string">&quot;_cgo_setenv missing&quot;</span>)
+            }
+            <span class="hljs-keyword">if</span> _cgo_unsetenv == <span class="hljs-literal">nil</span> {
+                throw(<span class="hljs-string">&quot;_cgo_unsetenv missing&quot;</span>)
+            }
+        }
+        <span class="hljs-keyword">if</span> _cgo_notify_runtime_init_done == <span class="hljs-literal">nil</span> {
+            throw(<span class="hljs-string">&quot;_cgo_notify_runtime_init_done missing&quot;</span>)
+        }
+        <span class="hljs-comment">// Start the template thread in case we enter Go from</span>
+        <span class="hljs-comment">// a C-created thread and need to create a new thread.</span>
+        startTemplateThread()
+        cgocall(_cgo_notify_runtime_init_done, <span class="hljs-literal">nil</span>)
+    }
+
+    <span class="hljs-comment">// &#x6267;&#x884C;main&#x5305;&#x4E2D;&#x7684;init&#x51FD;&#x6570;</span>
+    doInit(&amp;main_inittask)
+
+    <span class="hljs-comment">// Disable init tracing after main init done to avoid overhead</span>
+    <span class="hljs-comment">// of collecting statistics in malloc and newproc</span>
+    inittrace.active = <span class="hljs-literal">false</span>
+
+    <span class="hljs-built_in">close</span>(main_init_done)
+
+    needUnlock = <span class="hljs-literal">false</span>
+    unlockOSThread()
+
+    <span class="hljs-keyword">if</span> isarchive || islibrary {
+        <span class="hljs-comment">// A program compiled with -buildmode=c-archive or c-shared</span>
+        <span class="hljs-comment">// has a main, but it is not executed.</span>
+        <span class="hljs-keyword">return</span>
+    }
+    <span class="hljs-comment">// &#x6267;&#x884C;main&#x51FD;&#x6570;</span>
+    fn := main_main <span class="hljs-comment">// make an indirect call, as the linker doesn&apos;t know the address of the main package when laying down the runtime</span>
+    fn()
+    <span class="hljs-keyword">if</span> raceenabled {
+        runExitHooks(<span class="hljs-number">0</span>) <span class="hljs-comment">// run hooks now, since racefini does not return</span>
+        racefini()
+    }
+
+    <span class="hljs-comment">// Make racy client program work: if panicking on</span>
+    <span class="hljs-comment">// another goroutine at the same time as main returns,</span>
+    <span class="hljs-comment">// let the other goroutine finish printing the panic trace.</span>
+    <span class="hljs-comment">// Once it does, it will exit. See issues 3934 and 20018.</span>
+    <span class="hljs-keyword">if</span> runningPanicDefers.Load() != <span class="hljs-number">0</span> {
+        <span class="hljs-comment">// Running deferred functions should not take long.</span>
+        <span class="hljs-keyword">for</span> c := <span class="hljs-number">0</span>; c &lt; <span class="hljs-number">1000</span>; c++ {
+            <span class="hljs-keyword">if</span> runningPanicDefers.Load() == <span class="hljs-number">0</span> {
+                <span class="hljs-keyword">break</span>
+            }
+            Gosched()
+        }
+    }
+    <span class="hljs-keyword">if</span> panicking.Load() != <span class="hljs-number">0</span> {
+        gopark(<span class="hljs-literal">nil</span>, <span class="hljs-literal">nil</span>, waitReasonPanicWait, traceEvGoStop, <span class="hljs-number">1</span>)
+    }
+    runExitHooks(<span class="hljs-number">0</span>)
+
+    <span class="hljs-comment">// &#x9000;&#x51FA;</span>
+    exit(<span class="hljs-number">0</span>)
+    <span class="hljs-keyword">for</span> {
+        <span class="hljs-keyword">var</span> x *<span class="hljs-keyword">int32</span>
+        *x = <span class="hljs-number">0</span>
+    }
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="编译流程.html" class="navigation navigation-prev " aria-label="Previous page: 编译流程">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="内置关键字.html" class="navigation navigation-next " aria-label="Next page: 内置关键字">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"运行时","level":"1.2.13","depth":2,"next":{"title":"内置关键字","level":"1.2.14","depth":2,"path":"go/内置关键字.md","ref":"go/内置关键字.md","articles":[]},"previous":{"title":"编译流程","level":"1.2.12","depth":2,"path":"go/编译流程.md","ref":"go/编译流程.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"go/runtime.md","mtime":"2024-10-12T03:32:08.760Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-15T10:00:56.746Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
